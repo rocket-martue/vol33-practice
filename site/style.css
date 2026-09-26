@@ -1,0 +1,117 @@
+/* ------------------------------------------------------------
+   うどん処 まつかぜ — スタイル
+   ブランドカラーは docs/店舗情報.md を参照してください
+   ------------------------------------------------------------ */
+
+:root {
+  /* ブランドカラー（お店のロゴに使われている色） */
+  --brand: #8b5a2b;
+  --brand-light: #c89f6d;
+
+  /* 文字色・背景色 */
+  --text: #333333;
+  --bg: #fdfbf7;
+
+  /* 余白の基準 */
+  --space: 1.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+
+.site-header {
+  padding: calc(var(--space) * 2) var(--space);
+  text-align: center;
+  background: var(--brand-light);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.site-catch {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* 本文 */
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+
+.section {
+  padding: calc(var(--space) * 2) 0;
+  border-bottom: 1px solid #e5ded2;
+}
+
+/* 見出しの色はブランドカラーに合わせたい（未対応） */
+.section h2 {
+  margin: 0 0 var(--space);
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+/* 営業案内 */
+
+.info-list {
+  margin: 0;
+}
+
+.info-list dt {
+  font-weight: bold;
+}
+
+.info-list dd {
+  margin: 0 0 var(--space);
+}
+
+/* お品書き */
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #ddd5c8;
+}
+
+.menu-price {
+  font-variant-numeric: tabular-nums;
+}
+
+/* フッター */
+
+.site-footer {
+  padding: var(--space);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* 画面が広いとき */
+
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 2.25rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}

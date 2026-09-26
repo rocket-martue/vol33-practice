@@ -1,0 +1,57 @@
+# ------------------------------------------------------------
+# WordPress 案件で GitHub を使うときの .gitignore サンプル
+#
+# ここに書いたファイルは、そもそも記録の対象外になります。
+# 一度コミットすると履歴に残り続けるので、「入れる前に止める」のが鉄則です。
+# ------------------------------------------------------------
+
+# 🔴 絶対に入れてはいけないもの
+wp-config.php
+.env
+.env.*
+*.pem
+*.key
+
+# 🔴 お客様のデータ
+/wp-content/uploads/
+*.sql
+*.sql.gz
+*.zip
+
+# WordPress 本体（自分で書いたものではないので管理しない）
+/wp-admin/
+/wp-includes/
+/wp-*.php
+!/wp-config-sample.php
+/index.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# プラグイン・テーマ（自作のもの以外）
+/wp-content/plugins/
+/wp-content/themes/
+# 👇 自作のものだけ、除外を解除して管理する
+# !/wp-content/themes/my-theme/
+# !/wp-content/plugins/my-plugin/
+
+# キャッシュ・ログ
+/wp-content/cache/
+/wp-content/debug.log
+/wp-content/upgrade/
+*.log
+
+# ビルド関連
+node_modules/
+vendor/
+*.map
+
+# OS が勝手に作るファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタの設定
+.vscode/*
+!.vscode/extensions.json
+.idea/
