@@ -1,7 +1,7 @@
 # vol.33 ハンズオン練習用リポジトリ
 
-[高松] Takamatsu WordPress Meetup vol.33
-**AIを使うなら、コードを書かなくてもGitHubを使ってみよう**
+[高松] Takamatsu WordPress Meetup vol.33\
+**AIを使うなら、コードを書かなくてもGitHubを使ってみよう**\
 — WordPress 案件の「やること」と「変えたこと」を、1か所にまとめる
 
 ---
